@@ -32,8 +32,15 @@ function addTwo(n) {
  console.log(map([1, 2, 3], addTwo));
 
 // Challenge 4
-function forEach(array, callback) {}
-
+function forEach(array, callback) {
+    for ( let i = 0; i<array.length; i++) {
+        callback(array[i]);
+    }
+}
+function callback(n) {
+    console.log(n)
+}
+console.log(forEach([1,2,3,4],callback));
 // see for yourself if your forEach works!
 
 //--------------------------------------------------
