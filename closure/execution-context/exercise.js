@@ -19,8 +19,8 @@ var counter = (function() {
 })();
 
 counter.value(); output = 0;
-counter.increment();
-counter.increment();
-counter.value();
-counter.decrement();
-counter.value();
+counter.increment(); undefined
+counter.increment(); undefined
+counter.value(); 2
+counter.decrement(); undefined
+counter.value(); 1
