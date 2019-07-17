@@ -18,7 +18,7 @@ var counter = (function() {
   };
 })();
 
-counter.value();
+counter.value(); output = 0;
 counter.increment();
 counter.increment();
 counter.value();
