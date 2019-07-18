@@ -48,8 +48,16 @@ console.log(forEach([1,2,3,4],callback));
 //--------------------------------------------------
 
 //Extension 1
-function mapWith(array, callback) {}
-
+let arr = [1,2,3];
+function cb(n) {
+    let acc = 0;
+    return acc = acc+n;
+}
+function reduce(arr,cb) {
+    for (let i =0; i<arr.length; i++) {
+         return cb(arr[i]);
+}
+}
 //Extension 2
 function reduce(array, callback, initialValue) {}
 
