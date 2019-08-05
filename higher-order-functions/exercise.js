@@ -1,25 +1,46 @@
 // Challenge 1
-function addTwo(num) {}
-
-// To check if you've completed it, uncomment these console.logs!
-// console.log(addTwo(3));
-// console.log(addTwo(10));
+function addTwo(num) {
+    function add() {
+    return num+2;
+}
+return add();
+}
+ console.log(addTwo(3));
+ console.log(addTwo(10));
 
 // Challenge 2
-function addS(word) {}
-
-// uncomment these to check your work
-// console.log(addS('pizza'));
-// console.log(addS('bagel'));
+function addS(word) {
+    function add() {
+      return console.log(word+"s");
+    }
+    return add();
+}
+ console.log(addS('pizza'));
+ console.log(addS('bagel'));
 
 // Challenge 3
-function map(array, callback) {}
-
-// console.log(map([1, 2, 3], addTwo));
+function map(array, addTwo) {
+    let newarr = [];
+    for (let i =0; i<array.length; i++) {
+       newarr.push(addTwo(array[i]));
+    }
+    return newarr;
+}
+function addTwo(n) {
+    return n*2;
+}
+ console.log(map([1, 2, 3], addTwo));
 
 // Challenge 4
-function forEach(array, callback) {}
-
+function forEach(array, callback) {
+    for ( let i = 0; i<array.length; i++) {
+        callback(array[i]);
+    }
+}
+function callback(n) {
+    console.log(n)
+}
+console.log(forEach([1,2,3,4],callback));
 // see for yourself if your forEach works!
 
 //--------------------------------------------------
@@ -27,8 +48,16 @@ function forEach(array, callback) {}
 //--------------------------------------------------
 
 //Extension 1
-function mapWith(array, callback) {}
-
+let arr = [1,2,3];
+function cb(n) {
+    let acc = 0;
+    return acc = acc+n;
+}
+function reduce(arr,cb) {
+    for (let i =0; i<arr.length; i++) {
+         return cb(arr[i]);
+}
+}
 //Extension 2
 function reduce(array, callback, initialValue) {}
 
